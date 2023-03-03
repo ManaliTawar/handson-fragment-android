@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.assignment3.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_titleFragment_to_viewPagerActivity"
+            app:destination="@id/viewPagerActivity" />
+        <action
+            android:id="@+id/action_titleFragment_to_masterDetailActivity"
+            app:destination="@id/masterDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.assignment3.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/viewPagerActivity"
+        android:name="com.example.assignment3.ViewPagerActivity"
+        android:label="activity_view_pager"
+        tools:layout="@layout/activity_view_pager" />
+    <activity
+        android:id="@+id/masterDetailActivity"
+        android:name="com.example.assignment3.MasterDetailActivity"
+        android:label="activity_master_detail"
+        tools:layout="@layout/activity_master_detail" />
+</navigation>

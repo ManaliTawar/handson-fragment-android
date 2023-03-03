@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/aboutUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_us"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/task1Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/task1"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/task2Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/task2"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
